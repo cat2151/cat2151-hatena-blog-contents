@@ -13,9 +13,6 @@ jobs:
     # skip commits made by this workflow itself
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
 
-    permissions:
-      contents: write  # needed to push entry_id back to markdown
-
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -45,3 +42,17 @@ jobs:
           # only commit if there are changes (= new entries were created)
           git diff --cached --quiet || git commit -m "chore: update hatena_entry_id [skip ci]"
           git push
+
+      - name: Create issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          RAW_MSG='${{ github.event.head_commit.message }}'
+          SAFE_MSG="${RAW_MSG//$'\n'/ }"
+          SAFE_MSG="${SAFE_MSG//\"/\\\"}"
+          SAFE_MSG="${SAFE_MSG:0:256}"
+          gh issue create \
+            --title "投稿エラー (run #${{ github.run_number }}): ${SAFE_MSG}" \
+            --body "投稿ワークフローでエラーが発生しました。\n\n- **ブランチ**: ${{ github.ref_name }}\n- **コミット**: ${{ github.sha }}\n- **実行者**: ${{ github.actor }}\n\n詳細は以下のリンクを確認してください。\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --repo ${{ github.repository }}
