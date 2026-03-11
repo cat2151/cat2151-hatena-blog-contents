@@ -15,6 +15,7 @@ jobs:
 
     permissions:
       contents: write  # needed to push entry_id back to markdown
+      issues: write    # needed to create an issue on failure
 
     steps:
       - name: Checkout
@@ -45,3 +46,13 @@ jobs:
           # only commit if there are changes (= new entries were created)
           git diff --cached --quiet || git commit -m "chore: update hatena_entry_id [skip ci]"
           git push
+
+      - name: Create issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "投稿エラー (run #${{ github.run_number }}): ${{ github.event.head_commit.message }}" \
+            --body "投稿ワークフローでエラーが発生しました。\n\n- **ブランチ**: ${{ github.ref_name }}\n- **コミット**: ${{ github.sha }}\n- **実行者**: ${{ github.actor }}\n\n詳細は以下のリンクを確認してください。\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --repo ${{ github.repository }}
