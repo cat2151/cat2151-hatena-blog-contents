@@ -14,3 +14,6 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 
 ## リポジトリ
 - [cat2151-hatena-blog-contents](https://github.com/cat2151/cat2151-hatena-blog-contents/)
+
+## 参考：リポジトリ README （GitHub Pages）
+- [cat2151-hatena-blog-contents](https://cat2151.github.io/cat2151-hatena-blog-contents/)
