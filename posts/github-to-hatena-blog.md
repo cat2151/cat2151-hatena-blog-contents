@@ -22,6 +22,10 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
     - 原因は、htmlとして扱われること（とmarkdown指定しても想定した挙動をしないこと）
     - 対策は、先にmarkdownをパースしてhtml化、をすること（もちろん自動で）
 
+### 試してわかった、意外なメリット
+- UXがよいと感じた。なぜなら書いてからdeploy（記事への反映）までが爆速
+    - おそらく小規模だから。おそらくボトルネックが、当リポジトリのCIのmarkdown to htmlレンダラ、の部分として、そこが小規模で軽量、爆速だから
+
 ## リポジトリ
 - [cat2151-hatena-blog-contents](https://github.com/cat2151/cat2151-hatena-blog-contents/)
 
