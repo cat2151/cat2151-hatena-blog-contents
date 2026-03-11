@@ -73,7 +73,7 @@ def build_entry_xml(title: str, body: str) -> str:
 <entry xmlns="http://www.w3.org/2005/Atom"
        xmlns:app="http://www.w3.org/2007/app">
   <title>{escape(title)}</title>
-  <content type="text/plain"><![CDATA[{safe_body}]]></content>
+  <content type="text/x-markdown"><![CDATA[{safe_body}]]></content>
   <app:control>
     <app:draft>no</app:draft>
   </app:control>
