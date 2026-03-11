@@ -11,3 +11,6 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 ## 感想
 - こんな簡単にできるんだー！やったぜ！
 - Claudeのおかげだぜ
+
+## リポジトリ
+- [cat2151-hatena-blog-contents](https://github.com/cat2151/cat2151-hatena-blog-contents/)
