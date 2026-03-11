@@ -1,6 +1,6 @@
 ---
 title: "GitHubから、はてなブログに投稿する"
-hatena_entry_id: ""
+hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17179246901363848497"
 ---
 
 ## 3行で説明
