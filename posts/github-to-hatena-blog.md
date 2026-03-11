@@ -4,13 +4,9 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 ---
 
 ## 3行で説明
-- はてなブログにGitHubから投稿できるのかな？わからない
+- はてなブログにGitHubから投稿できたら面白そう！
 - 調査しつつ、Claudeと壁打ちした
-- できた
-
-## 感想
-- こんな簡単にできるんだー！やったぜ！
-- Claudeのおかげだぜ
+- できた！やったぜ！Claude便利だね！
 
 ## リポジトリ
 - [cat2151-hatena-blog-contents](https://github.com/cat2151/cat2151-hatena-blog-contents/)
