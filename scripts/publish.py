@@ -12,6 +12,7 @@ from pathlib import Path
 from datetime import datetime
 from xml.sax.saxutils import escape
 
+import markdown as md_lib
 import requests
 from xml.etree import ElementTree as ET
 
@@ -66,14 +67,17 @@ def write_entry_id(md_path: Path, entry_id: str) -> None:
 # ── AtomPub helpers ─────────────────────────────────────────────────────────
 
 def build_entry_xml(title: str, body: str) -> str:
-    # Split any "]]>" in body across two adjacent CDATA sections so it cannot
-    # prematurely terminate the outer CDATA block:  ]]> → ]] + ><![CDATA[
-    safe_body = body.replace("]]>", "]]]]><![CDATA[>")
+    # Convert Markdown to HTML so it renders correctly regardless of the
+    # blog's editor mode.  Split any "]]>" in the resulting HTML across two
+    # adjacent CDATA sections so it cannot prematurely terminate the outer
+    # CDATA block:  ]]> → ]] + ><![CDATA[
+    html_body = md_lib.markdown(body, extensions=["extra"])
+    safe_body = html_body.replace("]]>", "]]]]><![CDATA[>")
     return f"""<?xml version="1.0" encoding="utf-8"?>
 <entry xmlns="http://www.w3.org/2005/Atom"
        xmlns:app="http://www.w3.org/2007/app">
   <title>{escape(title)}</title>
-  <content type="text/x-markdown"><![CDATA[{safe_body}]]></content>
+  <content type="text/html"><![CDATA[{safe_body}]]></content>
   <app:control>
     <app:draft>no</app:draft>
   </app:control>
