@@ -48,7 +48,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          RAW_MSG='${{ github.event.head_commit.message }}'
+          SAFE_MSG="${RAW_MSG//$'\n'/ }"
+          SAFE_MSG="${SAFE_MSG//\"/\\\"}"
+          SAFE_MSG="${SAFE_MSG:0:256}"
           gh issue create \
-            --title "投稿エラー (run #${{ github.run_number }}): ${{ github.event.head_commit.message }}" \
+            --title "投稿エラー (run #${{ github.run_number }}): ${SAFE_MSG}" \
             --body "投稿ワークフローでエラーが発生しました。\n\n- **ブランチ**: ${{ github.ref_name }}\n- **コミット**: ${{ github.sha }}\n- **実行者**: ${{ github.actor }}\n\n詳細は以下のリンクを確認してください。\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
             --repo ${{ github.repository }}
