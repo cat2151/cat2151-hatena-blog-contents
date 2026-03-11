@@ -8,6 +8,10 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 - 調査しつつ、Claudeと壁打ちした
 - できた。やったぜ！Claude便利だね
 
+## 補足
+- 改行まわりでえんえんとClaudeがバグっていて時間がかかった
+  - 結果的にissueを投げまくっていたら解決した
+
 ## リポジトリ
 - [cat2151-hatena-blog-contents](https://github.com/cat2151/cat2151-hatena-blog-contents/)
 
