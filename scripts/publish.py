@@ -10,6 +10,7 @@ import sys
 import base64
 from pathlib import Path
 from datetime import datetime
+from xml.sax.saxutils import escape
 
 import requests
 from xml.etree import ElementTree as ET
@@ -65,11 +66,14 @@ def write_entry_id(md_path: Path, entry_id: str) -> None:
 # ── AtomPub helpers ─────────────────────────────────────────────────────────
 
 def build_entry_xml(title: str, body: str) -> str:
+    # Split any "]]>" in body across two adjacent CDATA sections so it cannot
+    # prematurely terminate the outer CDATA block:  ]]> → ]] + ><![CDATA[
+    safe_body = body.replace("]]>", "]]]]><![CDATA[>")
     return f"""<?xml version="1.0" encoding="utf-8"?>
 <entry xmlns="http://www.w3.org/2005/Atom"
        xmlns:app="http://www.w3.org/2007/app">
-  <title>{title}</title>
-  <content type="text/plain">{body}</content>
+  <title>{escape(title)}</title>
+  <content type="text/plain"><![CDATA[{safe_body}]]></content>
   <app:control>
     <app:draft>no</app:draft>
   </app:control>
