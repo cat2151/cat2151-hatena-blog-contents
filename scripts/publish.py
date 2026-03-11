@@ -112,6 +112,15 @@ def process_file(md_path: Path) -> None:
     title = fm.get("title", md_path.stem)
     entry_id = fm.get("hatena_entry_id", "").strip()
 
+    # Normalize entry_id: extract just the numeric part from full tag URIs.
+    # Handles "tag:...,...:entry/ENTRYID" (slash) and
+    # "tag:blog.hatena.ne.jp,...:blog-USER-BLOGID-ENTRYID" (dash) formats.
+    if entry_id.startswith("tag:"):
+        if "/" in entry_id:
+            entry_id = entry_id.split("/")[-1]
+        else:
+            entry_id = entry_id.rsplit("-", 1)[-1]
+
     if entry_id:
         print(f"[UPDATE] {md_path.name} → entry/{entry_id}")
         put_entry(entry_id, title, body.strip())
