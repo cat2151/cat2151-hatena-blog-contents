@@ -39,7 +39,7 @@ winget install "Surge XT"
 - REAPERが起動することを確認します。
 
 ## Track
-- `CTRL+T`を押します。
+- `CTRL + T`を押します。
 - Track1 が挿入されることを確認します。
 
 ## オーディオプラグイン
@@ -50,7 +50,7 @@ winget install "Surge XT"
 
 ## 仮想MIDI鍵盤
 - ※REAPERは、PCキーボードとマウスで操作のできる「仮想MIDI鍵盤」を備えています。
-- `ALT+B`を押します。
+- `ALT + B`を押します。
 - 仮想MIDI鍵盤が表示されたことを確認します。
 
 ## 録音アーム
