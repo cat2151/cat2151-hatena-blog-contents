@@ -107,6 +107,8 @@ CI。再利用可能ワークフロー
 
 タグ: `browser`
 
+---
+
 <a id="group-ym2151"></a>
 
 ## ym2151
@@ -165,6 +167,8 @@ FM音源MMLコンパイラ
 
 タグ: `audio` `cui`
 
+---
+
 <a id="group-tonejs"></a>
 
 ## tonejs
@@ -209,6 +213,8 @@ Tone.jsをデータで演奏。面倒なプログラミングは不要
 
 タグ: `audio` `browser`
 
+---
+
 <a id="group-obsidian"></a>
 
 ## obsidian
@@ -238,6 +244,8 @@ Obsidian用Templaterスクリプト集
 ### [recursive-folding](https://cat2151.github.io/recursive-folding/)
 
 Obsidianの折りたたみを再帰的に行う
+
+---
 
 <a id="group-webaudio"></a>
 
@@ -273,6 +281,8 @@ MMLをabc notationにトランスパイル
 
 タグ: `audio` `browser`
 
+---
+
 <a id="group-mml"></a>
 
 ## mml
@@ -301,6 +311,8 @@ MMLをほかのMMLに変換
 
 タグ: `audio` `browser`
 
+---
+
 <a id="group-blog"></a>
 
 ## blog
@@ -322,6 +334,8 @@ MMLをほかのMMLに変換
 Zenn投稿記事をGitHubで書く
 
 タグ: `blog`
+
+---
 
 <a id="group-zundamon"></a>
 
@@ -345,6 +359,8 @@ Zenn投稿記事をGitHubで書く
 
 タグ: `audio` `browser`
 
+---
+
 <a id="group-chromeextension"></a>
 
 ## chromeextension
@@ -360,6 +376,8 @@ BlueskyにMML演奏/DAW演奏/ずんだもん読み上げ ボタンをつける
 ZennとQiitaでmuteしたuserのBluesky投稿や記事本体に警告を出す
 
 タグ: `browser`
+
+---
 
 <a id="group-daw"></a>
 
@@ -377,6 +395,8 @@ MMLのDAW
 
 タグ: `audio` `daw` `tui`
 
+---
+
 <a id="group-fightinggame"></a>
 
 ## fightinggame
@@ -384,6 +404,8 @@ MMLのDAW
 ### [fighting-game-button-challenge](https://cat2151.github.io/fighting-game-button-challenge/README.ja.html)
 
 格ゲー（スト6）のレバーレスコントローラー用ボタン練習アプリ
+
+---
 
 <a id="group-vibes"></a>
 
@@ -394,6 +416,8 @@ MMLのDAW
 ClaudeChat自動化
 
 タグ: `tui` `vibes`
+
+---
 
 <a id="group-etc"></a>
 
@@ -446,6 +470,8 @@ ClaudeChat自動化
 ### [msys2-auto-install](https://cat2151.github.io/msys2-auto-install/README.ja.html)
 
 （説明なし）
+
+---
 
 <a id="group-stub"></a>
 
