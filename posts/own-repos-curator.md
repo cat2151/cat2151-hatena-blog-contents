@@ -1,6 +1,6 @@
 ---
 title: "（随時更新）GitHubの自分の公開リポジトリ一覧を自動生成させてみる"
-hatena_entry_id: ""
+hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17179246901373353453"
 ---
 
 ## 目次
