@@ -1,0 +1,8 @@
+title: "cat2151-hatena-blog-contents"
+description: "cat2151-hatena-blog-contents"
+theme: jekyll-theme-slate
+github:
+  is_project_page: true
+  repository_url: https://github.com/cat2151/cat2151-hatena-blog-contents
+plugins:
+  - jekyll-sitemap
