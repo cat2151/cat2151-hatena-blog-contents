@@ -12,6 +12,7 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 - [webaudio](#group-webaudio) (5件)
 - [mml](#group-mml) (4件)
 - [blog](#group-blog) (3件)
+- [ungrouped](#group-ungrouped) (3件)
 - [zundamon](#group-zundamon) (3件)
 - [chromeextension](#group-chromeextension) (2件)
 - [daw](#group-daw) (2件)
@@ -27,7 +28,7 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 
 cat2151のGitHubリポジトリをグループ別に一覧化したものです。
 
-最終更新: 2026-04-07
+最終更新: 2026-04-08
 
 <a id="group-github"></a>
 
@@ -72,11 +73,15 @@ self update機能を実現するライブラリ
 
 localリポジトリをGitHubに登録
 
+- どんなとき嬉しいか：ClaudeChatやCodexCLIなどにcode生成させたものがlocalにあり、それを自分のGitHubリポジトリとして公開したいとき
+
 タグ: `github` `tui` `vibes`
 
 ### [norenwake](https://cat2151.github.io/norenwake/README.ja.html)
 
 リポジトリを新リポジトリに履歴を維持して暖簾分け
+
+- どんなとき嬉しいか：バイブコーディングでプロトタイピングしていて、リポジトリが育ってきて、内部で複数のクレートに切り分けたので、片方のクレートを暖簾分けして別のリポジトリに切り分けたいとき
 
 タグ: `github` `tui` `vibes`
 
@@ -120,6 +125,9 @@ CI。再利用可能ワークフロー
 
 FM音源波形をTUIでグラフ表示するためのライブラリ
 
+- どんなとき嬉しいか：ym2151-tone-editorでFM音源波形やエンベロープをsixel表示するための準備用
+- 状況：実験中
+
 タグ: `audio` `tui`
 
 ### [web-ym2151](https://cat2151.github.io/web-ym2151/)
@@ -140,7 +148,7 @@ FM音源を鳴らすためのライブラリ
 
 タグ: `audio`
 
-### [cat-edit-mml](https://cat2151.github.io/cat-edit-mml/)
+### [cat-edit-mml](https://cat2151.github.io/cat-edit-mml/README.ja.html)
 
 MMLエディタ
 
@@ -324,6 +332,8 @@ MMLをほかのMMLに変換
 
 はてなブログの投稿記事をGitHubで書く
 
+- どんなとき嬉しいか：はてなブログの投稿記事をGitHubで書く仕組みを構築したいとき、参考にしたいとき
+
 タグ: `blog`
 
 ### [digital-garden](https://cat2151.github.io/digital-garden/)
@@ -340,6 +350,24 @@ Zenn投稿記事をGitHubで書く
 
 ---
 
+<a id="group-ungrouped"></a>
+
+## ungrouped
+
+### [gh-commit-ledger](https://cat2151.github.io/gh-commit-ledger/README.ja.html)
+
+（説明なし）
+
+### [cat-music-patterns](https://cat2151.github.io/cat-music-patterns/README.ja.html)
+
+（説明なし）
+
+### [cmrt-client-playground](https://cat2151.github.io/cmrt-client-playground/)
+
+（説明なし）
+
+---
+
 <a id="group-zundamon"></a>
 
 ## zundamon
@@ -347,6 +375,9 @@ Zenn投稿記事をGitHubで書く
 ### [mascot-render-server](https://cat2151.github.io/mascot-render-server/README.ja.html)
 
 ずんだもん等のデスクトップマスコット
+
+- どんなとき嬉しいか：坂本アヒル氏のずんだもん立ち絵PSDなどのzipをダウンロードしたものの、これをどうやってデスクトップマスコットにするか迷ったとき
+- 利用方法：このアプリと坂本アヒル氏の立ち絵セットがあればOK
 
 タグ: `psd` `zundamon`
 
@@ -390,11 +421,16 @@ ZennとQiitaでmuteしたuserのBluesky投稿や記事本体に警告を出す
 
 Surge XTの音色をオフラインレンダリングするためのライブラリ
 
+- これを利用して実現できること：clap-mml-render-tuiからライブラリとして利用することで、MML DAWを実現します
+
 タグ: `audio` `daw` `mml`
 
 ### [clap-mml-render-tui](https://cat2151.github.io/clap-mml-render-tui/README.ja.html)
 
 MMLのDAW
+
+- どんなとき嬉しいか：MMLで手軽にSurge XTの音色で遊びたいとき
+- 他のアプリと組み合わせ：bluesky-text-to-audio（chrome拡張）と組み合わせると、Blueskyに投稿されたMML（をtextareaで編集したもの）を、DAWで鳴らして遊べます
 
 タグ: `audio` `daw` `tui`
 
@@ -417,6 +453,8 @@ MMLのDAW
 ### [claude-chat-code](https://cat2151.github.io/claude-chat-code/README.ja.html)
 
 ClaudeChat自動化
+
+- どんなとき嬉しいか：ClaudChatでRustTuiZipダウンロードの形式で実装して検証のサイクルをまわしているとき。手動でzip展開～cargo runの実行が手間と感じたとき。
 
 タグ: `tui` `vibes`
 
