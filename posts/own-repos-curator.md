@@ -13,6 +13,7 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 - [daw](#group-daw) (4件)
 - [mml](#group-mml) (4件)
 - [blog](#group-blog) (3件)
+- [ungrouped](#group-ungrouped) (3件)
 - [zundamon](#group-zundamon) (3件)
 - [chromeextension](#group-chromeextension) (2件)
 - [fightinggame](#group-fightinggame) (1件)
@@ -27,7 +28,7 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 
 cat2151のGitHubリポジトリをグループ別に一覧化したものです。
 
-最終更新: 2026-04-24
+最終更新: 2026-04-25
 
 <a id="group-github"></a>
 
@@ -396,6 +397,24 @@ MMLをほかのMMLに変換
 Zenn投稿記事をGitHubで書く
 
 タグ: `blog`
+
+---
+
+<a id="group-ungrouped"></a>
+
+## ungrouped
+
+### [trace-rush](https://cat2151.github.io/trace-rush/)
+
+（説明なし）
+
+### [cat-task-manager](https://cat2151.github.io/cat-task-manager/README.ja.html)
+
+（説明なし）
+
+### [Zenn](https://github.com/cat2151/Zenn)
+
+（説明なし）
 
 ---
 
