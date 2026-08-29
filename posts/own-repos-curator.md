@@ -13,12 +13,12 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 - [daw](#group-daw) (4件)
 - [mml](#group-mml) (4件)
 - [blog](#group-blog) (3件)
-- [ungrouped](#group-ungrouped) (3件)
 - [zundamon](#group-zundamon) (3件)
 - [chromeextension](#group-chromeextension) (2件)
 - [fightinggame](#group-fightinggame) (1件)
+- [ungrouped](#group-ungrouped) (1件)
 - [vibes](#group-vibes) (1件)
-- [etc](#group-etc) (11件)
+- [etc](#group-etc) (13件)
 - [stub](#group-stub) (18件)
 
 
@@ -28,7 +28,7 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 
 cat2151のGitHubリポジトリをグループ別に一覧化したものです。
 
-最終更新: 2026-04-25
+最終更新: 2026-08-29
 
 <a id="group-github"></a>
 
@@ -400,24 +400,6 @@ Zenn投稿記事をGitHubで書く
 
 ---
 
-<a id="group-ungrouped"></a>
-
-## ungrouped
-
-### [trace-rush](https://cat2151.github.io/trace-rush/)
-
-（説明なし）
-
-### [cat-task-manager](https://cat2151.github.io/cat-task-manager/README.ja.html)
-
-（説明なし）
-
-### [Zenn](https://github.com/cat2151/Zenn)
-
-（説明なし）
-
----
-
 <a id="group-zundamon"></a>
 
 ## zundamon
@@ -473,6 +455,16 @@ ZennとQiitaでmuteしたuserのBluesky投稿や記事本体に警告を出す
 
 ---
 
+<a id="group-ungrouped"></a>
+
+## ungrouped
+
+### [Zenn](https://github.com/cat2151/Zenn)
+
+（説明なし）
+
+---
+
 <a id="group-vibes"></a>
 
 ## vibes
@@ -490,6 +482,22 @@ ClaudeChat自動化
 <a id="group-etc"></a>
 
 ## etc
+
+### [trace-rush](https://cat2151.github.io/trace-rush/)
+
+タッチペンやマウスで遊ぶ手軽なゲーム
+
+- どんなとき嬉しいか：ペンで線を引くのに慣れる、のをゲーム感覚で楽しみたいとき
+
+タグ: `browser`
+
+### [cat-task-manager](https://cat2151.github.io/cat-task-manager/README.ja.html)
+
+モーニングルーティーンなどを手軽にタスク管理
+
+- どんなとき嬉しいか：モーニングルーティーンなどを手軽にタスク管理したいとき
+
+タグ: `tui`
 
 ### [cat-window-watcher](https://cat2151.github.io/cat-window-watcher/README.ja.html)
 
