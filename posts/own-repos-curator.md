@@ -5,18 +5,18 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 
 ## 目次
 
-- [github](#group-github) (12件)
+- [github](#group-github) (13件)
 - [ym2151](#group-ym2151) (9件)
+- [daw](#group-daw) (7件)
 - [tonejs](#group-tonejs) (6件)
 - [obsidian](#group-obsidian) (5件)
-- [ungrouped](#group-ungrouped) (5件)
 - [webaudio](#group-webaudio) (5件)
-- [daw](#group-daw) (4件)
 - [mml](#group-mml) (4件)
 - [blog](#group-blog) (3件)
 - [zundamon](#group-zundamon) (3件)
 - [chromeextension](#group-chromeextension) (2件)
 - [fightinggame](#group-fightinggame) (1件)
+- [ungrouped](#group-ungrouped) (1件)
 - [vibes](#group-vibes) (1件)
 - [etc](#group-etc) (13件)
 - [stub](#group-stub) (18件)
@@ -28,11 +28,19 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 
 cat2151のGitHubリポジトリをグループ別に一覧化したものです。
 
-最終更新: 2026-08-29
+最終更新: 2026-11-18
 
 <a id="group-github"></a>
 
 ## github
+
+### [lib-respect](https://cat2151.github.io/lib-respect/README.ja.html)
+
+Rustライブラリクレート作者をリスペクトしてStarをつけにいくことをサポート
+
+- どんなとき嬉しいか：Starをつけたいとき
+
+タグ: `github` `tui`
 
 ### [gh-commit-ledger](https://cat2151.github.io/gh-commit-ledger/README.ja.html)
 
@@ -189,6 +197,71 @@ FM音源MMLコンパイラ
 
 ---
 
+<a id="group-daw"></a>
+
+## daw
+
+### [repl-plugin-player](https://cat2151.github.io/repl-plugin-player/README.ja.html)
+
+REPLでオーディオプラグインを演奏、簡易DAWのようなもの
+
+- どんなとき嬉しいか：REPLでオーディオプラグインで遊びたいとき
+
+タグ: `audio` `daw` `mml`
+
+### [cat-smf-editor](https://cat2151.github.io/cat-smf-editor/README.ja.html)
+
+スタンダードMIDIファイルをオーディオプラグインで演奏、簡易DAWのようなもの
+
+- どんなとき嬉しいか：DAWがとっつきにくいと感じたとき
+
+タグ: `audio` `daw` `mml` `zundamon`
+
+### [cat-plugin-player](https://cat2151.github.io/cat-plugin-player/README.ja.html)
+
+オーディオプラグインを楽に演奏、音色ブラウザーつき
+
+- どんなとき嬉しいか：DAWがとっつきにくいと感じたとき
+
+タグ: `audio` `mml`
+
+### [cat-music-patterns](https://cat2151.github.io/cat-music-patterns/README.ja.html)
+
+コード進行など音楽のテンプレートを集めたもの
+
+- どんなとき嬉しいか：コード進行のテンプレートがほしいとき
+- 他のアプリと組み合わせ：cmrt-client-playgroundがテンプレートとして利用しています
+
+タグ: `audio` `mml`
+
+### [cmrt-client-playground](https://cat2151.github.io/cmrt-client-playground/)
+
+コード進行をDAWに入力
+
+- どんなとき嬉しいか：手軽にコード進行を入力したいとき
+- 他のアプリと組み合わせ：clap-mml-render-tuiを起動しているとオーディオプラグインで音が鳴ります
+
+タグ: `audio` `blog` `daw` `mml`
+
+### [clap-mml-play-server](https://cat2151.github.io/clap-mml-play-server/README.ja.html)
+
+Surge XTの音色をオフラインレンダリングするためのライブラリ
+
+- これを利用して実現できること：clap-mml-render-tuiからライブラリとして利用することで、MML DAWを実現します
+
+タグ: `audio` `daw` `mml`
+
+### [clap-mml-render-tui](https://cat2151.github.io/clap-mml-render-tui/README.ja.html)
+
+MMLのDAW
+
+- どんなとき嬉しいか：MMLで手軽にSurge XTの音色で遊びたいとき
+- 他のアプリと組み合わせ：bluesky-text-to-audio（chrome拡張）と組み合わせると、Blueskyに投稿されたMML（をtextareaで編集したもの）を、DAWで鳴らして遊べます
+
+タグ: `audio` `daw` `tui`
+
+---
+
 <a id="group-tonejs"></a>
 
 ## tonejs
@@ -267,32 +340,6 @@ Obsidianの折りたたみを再帰的に行う
 
 ---
 
-<a id="group-ungrouped"></a>
-
-## ungrouped
-
-### [repl-plugin-player](https://cat2151.github.io/repl-plugin-player/README.ja.html)
-
-（説明なし）
-
-### [lib-respect](https://cat2151.github.io/lib-respect/README.ja.html)
-
-（説明なし）
-
-### [cat-smf-editor](https://cat2151.github.io/cat-smf-editor/README.ja.html)
-
-（説明なし）
-
-### [cat-plugin-player](https://cat2151.github.io/cat-plugin-player/README.ja.html)
-
-（説明なし）
-
-### [Zenn](https://github.com/cat2151/Zenn)
-
-（説明なし）
-
----
-
 <a id="group-webaudio"></a>
 
 ## webaudio
@@ -326,47 +373,6 @@ MMLをabc notationにトランスパイル
 （説明なし）
 
 タグ: `audio` `browser`
-
----
-
-<a id="group-daw"></a>
-
-## daw
-
-### [cat-music-patterns](https://cat2151.github.io/cat-music-patterns/README.ja.html)
-
-コード進行など音楽のテンプレートを集めたもの
-
-- どんなとき嬉しいか：コード進行のテンプレートがほしいとき
-- 他のアプリと組み合わせ：cmrt-client-playgroundがテンプレートとして利用しています
-
-タグ: `audio` `mml`
-
-### [cmrt-client-playground](https://cat2151.github.io/cmrt-client-playground/)
-
-コード進行をDAWに入力
-
-- どんなとき嬉しいか：手軽にコード進行を入力したいとき
-- 他のアプリと組み合わせ：clap-mml-render-tuiを起動しているとオーディオプラグインで音が鳴ります
-
-タグ: `audio` `blog` `daw` `mml`
-
-### [clap-mml-play-server](https://cat2151.github.io/clap-mml-play-server/README.ja.html)
-
-Surge XTの音色をオフラインレンダリングするためのライブラリ
-
-- これを利用して実現できること：clap-mml-render-tuiからライブラリとして利用することで、MML DAWを実現します
-
-タグ: `audio` `daw` `mml`
-
-### [clap-mml-render-tui](https://cat2151.github.io/clap-mml-render-tui/README.ja.html)
-
-MMLのDAW
-
-- どんなとき嬉しいか：MMLで手軽にSurge XTの音色で遊びたいとき
-- 他のアプリと組み合わせ：bluesky-text-to-audio（chrome拡張）と組み合わせると、Blueskyに投稿されたMML（をtextareaで編集したもの）を、DAWで鳴らして遊べます
-
-タグ: `audio` `daw` `tui`
 
 ---
 
@@ -478,6 +484,16 @@ ZennとQiitaでmuteしたuserのBluesky投稿や記事本体に警告を出す
 ### [fighting-game-button-challenge](https://cat2151.github.io/fighting-game-button-challenge/README.ja.html)
 
 格ゲー（スト6）のレバーレスコントローラー用ボタン練習アプリ
+
+---
+
+<a id="group-ungrouped"></a>
+
+## ungrouped
+
+### [Zenn](https://github.com/cat2151/Zenn)
+
+（説明なし）
 
 ---
 
