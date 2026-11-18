@@ -9,6 +9,7 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 - [ym2151](#group-ym2151) (9件)
 - [tonejs](#group-tonejs) (6件)
 - [obsidian](#group-obsidian) (5件)
+- [ungrouped](#group-ungrouped) (5件)
 - [webaudio](#group-webaudio) (5件)
 - [daw](#group-daw) (4件)
 - [mml](#group-mml) (4件)
@@ -16,7 +17,6 @@ hatena_entry_id: "tag:blog.hatena.ne.jp,2013:blog-cat2151-6435988827677137845-17
 - [zundamon](#group-zundamon) (3件)
 - [chromeextension](#group-chromeextension) (2件)
 - [fightinggame](#group-fightinggame) (1件)
-- [ungrouped](#group-ungrouped) (1件)
 - [vibes](#group-vibes) (1件)
 - [etc](#group-etc) (13件)
 - [stub](#group-stub) (18件)
@@ -267,6 +267,32 @@ Obsidianの折りたたみを再帰的に行う
 
 ---
 
+<a id="group-ungrouped"></a>
+
+## ungrouped
+
+### [repl-plugin-player](https://cat2151.github.io/repl-plugin-player/README.ja.html)
+
+（説明なし）
+
+### [lib-respect](https://cat2151.github.io/lib-respect/README.ja.html)
+
+（説明なし）
+
+### [cat-smf-editor](https://cat2151.github.io/cat-smf-editor/README.ja.html)
+
+（説明なし）
+
+### [cat-plugin-player](https://cat2151.github.io/cat-plugin-player/README.ja.html)
+
+（説明なし）
+
+### [Zenn](https://github.com/cat2151/Zenn)
+
+（説明なし）
+
+---
+
 <a id="group-webaudio"></a>
 
 ## webaudio
@@ -452,16 +478,6 @@ ZennとQiitaでmuteしたuserのBluesky投稿や記事本体に警告を出す
 ### [fighting-game-button-challenge](https://cat2151.github.io/fighting-game-button-challenge/README.ja.html)
 
 格ゲー（スト6）のレバーレスコントローラー用ボタン練習アプリ
-
----
-
-<a id="group-ungrouped"></a>
-
-## ungrouped
-
-### [Zenn](https://github.com/cat2151/Zenn)
-
-（説明なし）
 
 ---
 
